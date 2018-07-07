@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <h1>{{title}}</h1>
+        <h4>{{subTitle}}</h4>
+    </div>
+
+    <figure>
+
+        <img v-bind:src="figure.src" alt="">
+        <figcaption>{{figure.caption}}</figcaption>
+    </figure>
+
+    <div>
+        <h4>{{timeLine.heading}}</h4>
+
+        <ul>
+            <li v-for='event in timeLine.events'><span >{{event.year}}</span> - {{event.description}}</li>
+        </ul>
+
+        <blockquote>
+            {{quote.text}}
+            <cite>--{{quote.author}}</cite>
+        </blockquote>
+
+        <p>
+            <a href=""></a>
+        </p>
+    </div>
+</div>
